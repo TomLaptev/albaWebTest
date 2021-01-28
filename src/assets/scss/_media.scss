@@ -1,0 +1,732 @@
+/* // Display size 
+ $hld: 1920/100; //Hyper Large Devices, Wide Screens
+$sld: 1600/100; //Super Large Devices, Wide Screens
+$ld: 1280/100; //Large Devices, Wide Screens
+$md: 1024/100; //Medium Devices, Desktop
+$sd: 767/100; //Small Devices, Tablets
+$ssd: 600/100; //Super Small Devices, Tablets
+$esd: 480/100; // ExtraSmall Devices, Phones
+$custom: 320/100; //Custom, IPhone Retina */
+
+@media screen and (max-width: 1800px) {
+  .display-2 {
+    .col-4 {
+      padding-right: 20px;
+    }
+  }
+  .display-3 {
+    .descrPhoto_1 {
+      .overlay {
+        .description-1 {
+          .heading {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1600px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .text_page {
+    max-width: 1600px;
+  }
+  .display-1 {
+    margin-bottom: 170px;
+    padding-top: 40px;
+    height: 790px;
+  }
+  .header {
+    margin-bottom: 210px;
+    .contacts {
+      .lang {
+        &__tick {
+          margin-right: 40px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  //==========end header======1600
+
+  .title {
+    margin-bottom: 40px;
+    font: 72px Prata-Regular;
+  }
+  .descrription {
+    p {
+      max-width: 500px;
+    }
+  }
+  //============display-2====1600
+  .display-2 {
+    margin-bottom: 150px;
+    .title {
+      font-size: 54px;
+    }
+  }
+  //============display-3====1600
+  .display-3 {
+    margin-bottom: 160px;
+
+    .item-1 {
+      margin-bottom: 120px;
+    }
+    .descr-photo {
+      margin-bottom: 120px;
+      .overlay {
+        .description {
+          padding-top: 180px;
+          width: 85%;
+          .heading {
+            font: 54px Prata-Regular;
+          }
+        }
+
+        .description-2 {
+          padding-top: 7.5em;
+          width: 60%;
+          // margin: 0;
+        }
+      }
+    }
+  }
+
+  //==============display-4==========1600
+  .display-4 {
+    margin-bottom: 120px;
+    .table {
+      thead {
+        tr {
+          td:first-child {
+            padding-left: 40px;
+          }
+          td:last-child {
+            padding-right: 40px;
+          }
+        }
+      }
+      .body {
+        tr {
+          td:first-child {
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  #scroll-down {
+    top: 645px;
+    right: 210px;
+  }
+  //======= display-5  ===========1600
+  .display-5 {
+    margin-bottom: 150px;
+  }
+}
+/* User Screen */
+@media screen and (max-width: 1450px) {
+  /* Large Devices, Wide Screens */
+  .display-4 {
+    .table {
+      min-width: 1450px;
+    }
+    input[type="range"] {
+      display: inherit;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .text_page {
+    max-width: 1280px;
+  }
+  .display-1 {
+    margin-bottom: 120px;
+    padding-top: 30px;
+    height: 632px;
+  }
+  .header {
+    margin-bottom: 160px;
+    nav {
+      .top-menu {
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+    .contacts {
+      .lang {
+        &__tick {
+          margin-right: 30px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  //==========end header======
+
+  .title {
+    margin-bottom: 35px;
+    font: 52px Prata-Regular;
+  }
+  .descrription {
+    padding-left: 35px;
+    p {
+      max-width: 465px;
+      padding: 10px 30px;
+    }
+  }
+
+  #scroll-down {
+    top: 510px;
+    right: 165px;
+  }
+  //======display-2==========1280
+
+  .display-2 {
+    margin-bottom: 100px;
+    .row {
+      max-width: 80%;
+      .col-4 {
+        .icon {
+          margin-bottom: 40px;
+        }
+        img {
+          width: 72px;
+        }
+      }
+    }
+    .title {
+      font-size: 40px;
+      margin-bottom: 35px;
+    }
+  }
+  //============display-3==== 1280
+  .display-3 {
+    margin-bottom: 120px;
+    .item-1 {
+      margin-bottom: 80px;
+    }
+    .descr-photo {
+      .overlay {
+        .description {
+          width: 90%;
+          padding-top: 60px;
+          margin-right: 3.5%;
+          .heading {
+            font: 42px Prata-Regular;
+          }
+          .content {
+            font: 1rem Inter-Regular;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .descrPhoto_2 {
+      .overlay {
+        .description-2 {
+          width: 65%;
+          padding-top: 2rem;
+          margin-right: 16%;
+        }
+      }
+    }
+  }
+  //============display-4==== 1280
+  .display-4 {
+    margin-bottom: 90px;
+    .table {
+      thead {
+        tr {
+          td:first-child {
+            padding-left: 20px;
+          }
+          td:last-child {
+            padding-right: 20px;
+          }
+        }
+      }
+      .body {
+        tr {
+          td:first-child {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+    //======= display-5  ===========1280
+    .display-5 {
+      margin-bottom: 120px;
+    }
+  
+  //==============display-6========== 1280
+  .display-6 {
+    .contacts {
+      &__title {
+        font: 42px Prata-Regular;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+}
+/* Medium Devices, Desktop */
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .text_page {
+    max-width: 991px;
+  }
+  .display-1 {
+    height: 489px;
+    margin-bottom: 80px;
+    padding-top: 30px;
+  }
+  .header {
+    margin-bottom: 120px;
+    font: 1.125rem RobotoRegular;
+    .logo {
+      img {
+        width: 90px;
+        height: 30px;
+      }
+    }
+
+    nav {
+      border: none;
+      position: absolute;
+      left: -9999px;
+    }
+    .contacts {
+      align-items: center;
+      color: white;
+      .lang {
+        display: flex;
+        &__value {
+          width: 20px;
+        }
+        &__tick {
+          margin-right: 15px;
+          display: flex;
+          margin-top: 2px;
+        }
+      }
+      .telephon {
+        margin-right: 0;
+      }
+    }
+    .btn-menu {
+      position: relative;
+      font-size: 1.75rem;
+      line-height: 1;
+      .drop-menu {
+        left: inherit;
+        right: -30px;
+        li {
+          padding-top: 0px;
+          a {
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font: 36px Prata-Regular;
+  }
+  .descrription {
+    padding-left: 30px;
+    p {
+      max-width: 390px;
+      padding: 10px 20px;
+    }
+  }
+
+  #scroll-down {
+    top: 385px;
+    right: 125px;
+  }
+  //=======display-2============991
+  .display-2 {
+    margin-bottom: 60px;
+    .row {
+      max-width: 90%;
+      .col-4 {
+        .icon {
+          margin-bottom: 20px;
+        }
+        img {
+          width: 64px;
+        }
+        h3 {
+          margin-bottom: 30px;
+        }
+        h3:after {
+          bottom: -14px;
+        }
+      }
+    }
+    .title {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+  }
+
+  //============display-3==== 991
+  .display-3 {
+    margin-bottom: 80px;
+    .row {
+      margin-bottom: 80px;
+      display: block;
+      .photo {
+        margin-bottom: 40px;
+        display: block;
+        text-align: center;
+        justify-content: center;
+
+        img {
+          width: 70%;
+        }
+      }
+      .descr-photo {
+        margin-bottom: 0px;
+        padding-top: 0;
+        img {
+          width: 0;
+          display: none;
+        }
+        .overlay {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          .description {
+            margin-right: 0;
+            box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+            border: none;
+            max-width: 50%;
+            padding-top: 0;
+            .heading {
+              font: 42px Prata-Regular;
+            }
+            .content {
+              font: 1rem Inter-Regular; /*  */
+              line-height: 1.5;
+              padding: 1em;
+            }
+          }
+        }
+      }
+      .descrPhoto_2 {
+        .overlay {
+          .description-2 {
+            width: 65%;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  //==============display-4========== 991
+  .display-4 {
+    margin-bottom: 80px;
+    .title {
+      margin-bottom: 40px;
+      text-align: center;
+      p {
+        font-size: 42px;
+      }
+    }
+    .table {
+      min-width: 1000px;
+      max-width: 1200px;
+    }
+  }
+  //==============display-5========== 991
+  .display-5 {
+    margin-bottom: 80px;
+    .title {
+      margin-bottom: 40px;
+      text-align: center;
+      p {
+        font-size: 42px;
+      }
+    }
+    .bems-scroller {
+      li {
+        width: 200px;
+        margin: 0.5rem;
+      }
+    }    
+  
+  }
+  //==============display-6========== 991
+  .display-6 {
+    .contacts {
+      &__title {
+        font: 42px Prata-Regular;
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width: 767px) {
+  .text_page {
+    max-width: 767px;
+  }
+  .display-1 {
+    height: 379px;
+    margin-bottom: 60px;
+    padding-top: 15px;
+    .header {
+      max-width: 90%;
+      margin-bottom: 90px;
+    }
+  }
+  .title {
+    max-width: 90%;
+    margin-bottom: 20px;
+    font: 28px Prata-Regular;
+  }
+  .descrription {
+    max-width: 90%;
+    padding-left: 20px;
+    p {
+      max-width: 420px;
+      padding: 5px 15px;
+    }
+  }
+
+  #scroll-down {
+    top: 385px;
+    right: 125px;
+  }
+  #scroll-down {
+    top: 290px;
+    right: 95px;
+  }
+  //=======display-2============
+  .display-2 {
+    margin-bottom: 40px;
+    .row {
+      flex-direction: column;
+      max-width: 90%;
+      .col-4 {
+        margin-bottom: 20px;
+      }
+    }
+    .title {
+      font-size: 26px;
+      margin-bottom: 35px;
+    }
+  }
+
+  //============display-3====
+  .display-3 {
+    .row {
+      margin-bottom: 60px;
+      .photo {
+        margin-bottom: 30px;
+        img {
+          width: 80%;
+        }
+      }
+      .descr-photo {
+        .overlay {
+          .description {
+            max-width: 70%;
+            .heading {
+              font: 40px Prata-Regular;
+            }
+          }
+        }
+      }
+      .descrPhoto_2 {
+        .overlay {
+          .description-2 {
+            width: 70%;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Super Small Devices, Tablets */
+@media screen and (max-width: 600px) {
+}
+
+/* ExtraSmall Devices, Phones */
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .text_page {
+    max-width: 480px;
+  }
+  .display-1 {
+    height: 237px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+
+    .header {
+      max-width: 95%;
+      margin-bottom: 40px;
+
+      .logo {
+        img {
+          width: 60px;
+          height: 20px;
+        }
+      }
+
+      .btn-menu {
+        .drop-menu {
+          right: -10px;
+          top: 20px;
+          background: #000;
+          li {
+            padding: 10px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .title {
+    max-width: 95%;
+    margin-bottom: 5px;
+    font: 16px Prata-Regular;
+  }
+  .descrription {
+    //border: solid 1px white;
+    max-width: 95%;
+    padding-left: 0px;
+    p {
+      max-width: 300px;
+      padding: 5px 5px;
+    }
+  }
+
+  #scroll-down {
+    top: 170px;
+    right: 30px;
+  }
+  //=========display-2=======480
+  .display-2 {
+    .row {
+      max-width: 90%;
+      .col-4 {
+        .icon {
+          margin-bottom: 10px;
+        }
+        img {
+          width: 40px;
+        }
+        h3 {
+          margin-bottom: 20px;
+        }
+        h3:after {
+          bottom: -9px;
+        }
+      }
+    }
+    .title {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .display-3 {
+    .row {
+      margin-bottom: 40px;
+      .photo {
+        margin-bottom: 20px;
+        img {
+          width: 80%;
+        }
+      }
+      .descr-photo {
+        .overlay {
+          .description {
+            max-width: 80%;
+            .heading {
+              font: 30px Prata-Regular;
+            }
+          }
+        }
+      }
+      .descrPhoto_2 {
+        .overlay {
+          .description-2 {
+            width: 80%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  //============display-3==== 480
+  .display-3 {
+    margin-bottom: 40px;
+  }
+  //==============display-4========== 480
+  .display-4 {
+    margin-bottom: 40px;
+    .title {
+      margin-bottom: 30px;
+      text-align: center;
+      p {
+        font-size: 32px;
+      }
+    }
+  }
+  //==============display-5========== 480
+  .display-5 {
+      margin-bottom: 50px;
+    .title {
+      margin-bottom: 30px;
+      text-align: center;
+      p {
+        font-size: 32px;
+      }
+    }
+  }
+  //==============display-5========== 480
+  .display-6 {
+    .contacts {
+      &__title {
+        font: 30px Prata-Regular;
+      }
+    }
+  }
+}
+
+/* Custom, IPhone Retina */
+@media screen and (max-width: 320px) {
+}
+
+// Всегда в конце
