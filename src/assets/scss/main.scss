@@ -11,8 +11,15 @@ body {
 .text_page {
   margin: 0 auto;
   max-width: 1920px;
+
+  h2 {
+    line-height: 1.15;
+    font-weight: normal;
+    color: #000;
+  }
 }
 
+//=============display-1=============
 .display-1 {
   position: relative;
   padding-top: 48px;
@@ -55,7 +62,7 @@ body {
         margin-left: 40px;
         span {
           text-decoration: none;
-          color: $white;
+          color: white;
           cursor: pointer;
           &:hover {
             color: red;
@@ -156,7 +163,7 @@ body {
   width: 100%;
   margin: 0px auto 40px;
 
-  font: 96px Prata-Regular;
+  font-family: Prata-Regular;
   line-height: 1.15;
   font-weight: 400;
   color: white;
@@ -200,10 +207,11 @@ body {
     //border: solid 1px red;
     margin-top: 0;
     margin-bottom: 75px;
-    font: 64px Prata-Regular;
+    font-family: Prata-Regular;
     line-height: 1.15;
-    font-weight: 400;
-    color: #000;
+  }
+  .subtitle {
+    font-family: Prata-Regular;
   }
   .row {
     justify-content: space-between;
@@ -295,7 +303,7 @@ body {
         // border: solid 1px blue;
         margin-right: 8.5%;
         .heading {
-          font: 64px Prata-Regular;
+          font-family: Prata-Regular;
           line-height: 1.15em;
           margin-bottom: 0.5em;
         }
@@ -336,12 +344,9 @@ body {
   .title {
     margin-bottom: 60px;
 
-    p {
+    h2 {
       margin-top: 0;
-      font: 64px Prata-Regular;
-      line-height: 1.15;
-      font-weight: 400;
-      color: #000;
+      font-family: Prata-Regular;
     }
   }
   .bems-scroll {
@@ -443,19 +448,6 @@ body {
   * {
     box-sizing: border-box;
   }
-  .title {
-    margin-bottom: 60px;
-
-    p {
-      //border: solid 1px red;
-      margin-top: 0;
-      //margin-bottom: 75px;
-      font: 64px Prata-Regular;
-      line-height: 1.15;
-      font-weight: 400;
-      color: #000;
-    }
-  }
   .bems-scroller {
     //display: flex;
     //height: 200px;
@@ -492,8 +484,7 @@ body {
       }
       .descr-pic {
         margin-bottom: 4rem;
-        font: 1.875rem Prata-Regular;
-        //line-height: 48px;
+        font-family: Prata-Regular;
         font-weight: normal;
         font-style: normal;
         color: rgba(18, 25, 37, 1);
@@ -523,7 +514,7 @@ body {
     -moz-appearance: none;
     -webkit-appearance: none;
     border-radius: 5.5px;
-  } /**/
+  } 
 }
 
 .display-6 {
@@ -552,9 +543,7 @@ body {
     margin-left: 17%;
     &__title {
       margin-bottom: 1em;
-      font: 64px Prata-Regular;
-      font-weight: normal;
-      font-style: normal;
+      font-family: Prata-Regular;
       line-height: 1;
       color: #fff;
     }

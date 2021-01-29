@@ -28,19 +28,22 @@ ol, ul, li, fieldset, legend, label {
     padding: 0;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 96px;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 64px;
+ line-height: 1.15;
+  font-weight: normal;
+  color: #000;
 }
 
 
 h3 {
-  font-size: 1.875rem;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 0.94rem;
+  font-size: 20px;
 }
 
 h5 {
