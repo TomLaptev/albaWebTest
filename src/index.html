@@ -17,12 +17,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <noscript>
     <style>
-      /**
-      * Reinstate scrolling for non-JS clients
-      */
-      .simplebar-content-wrapper {
-        overflow: auto;
-      }
+
     </style>
   </noscript>
 </head>
@@ -32,7 +27,7 @@
 
     <section class="display-1">
 
-      <header class="header">
+      <header class="header " id="home-scroll">
         <div class="logo">
           <img src="image/display-1/logo.png" alt="logo">
 
@@ -70,19 +65,17 @@
         <div class="btn-menu">
           <i class="fa fa-bars" aria-hidden="true"></i>
           <ul class="drop-menu">
-            <li><a href="/"> Home</a> </li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Works</a></li>
-            <li><a href="/">Join</a></li>
-            <li><a href="/">Contact</a></li>
+            <li class="scroll" data-section="About"><span>About</span></li>
+            <li class="scroll" data-section="About"><span>About</span></li>
+            <li class="scroll" data-section="Works"><span>Works</span></li>
+            <li class="scroll" data-section="Join"><span>Join</span></li>
+            <li class="scroll" data-section="Contacts"><span> Contact</span></li>
           </ul>
         </div>
 
 
 
       </header>
-
-      <!--  <div class="title-wrapper"></div> -->
       <div class="title">
         <h1>Mercedes-Benz</h1>
         <h1>190 (W201)</h1>
@@ -94,12 +87,12 @@
           Mercedes-Benz. The car was produced starting in 1982, and it was removed from the Assembly line in 1993.</p>
       </div>
 
-    </section>
-    <div class="scroll-down scroll" id="scroll-down" data-section="btn-scroll">
-      <img src="image/display-1/down.png" alt="tic">
-    </div>
 
-    <section class="display-2" id="Works">
+      <div class="scroll-down scroll" id="scroll-down" data-section="btn-scroll">
+        <img src="image/display-1/down.png" alt="tic">
+      </div>
+    </section>
+    <section class="display-2">
 
       <div class="title">
         <h2>Advantagesof</h2>
@@ -236,65 +229,65 @@
       <div class="content">
 
         <div class="bems-scroll">
-        <div id="scroll-content">
+          <div id="scroll-content">
 
-          <table class="table">
-            <thead>
-              <tr>
-                <td>Parameters</td>
-                <td>E 220 D</td>
-                <td>E 290 TD</td>
-                <td>E 300 D</td>
-                <td>E 200 CDI</td>
-                <td>E 220 CDI</td>
-                <td>E 270 CDI</td>
-                <td>E 320 CDI</td>
-              </tr>
-            </thead>
-            <tbody class="body">
-              <tr>
-                <td>
-                  <p>Lubrication </p>
-                  <p>system of a car, L</p>
-                </td>
-                <td>6.5</td>
-                <td>7.0</td>
-                <td>n/d</td>
-                <td>6.0</td>
-                <td>6.5</td>
-                <td>7.0</td>
-                <td>7.5</td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Cooling</p>
-                  <p>system, L</p>
-                </td>
-                <td>9.0</td>
-                <td>9.5</td>
-                <td>n/d</td>
-                <td>1.0</td>
-                <td>9.0</td>
-                <td>10.6</td>
-                <td>11.2</td>
-              </tr>
-              <tr>
-                <td>
-                  <p>Fuel tank/fuel</p>
-                  <p>reserve, L</p>
-                </td>
-                <td>65/8</td>
-                <td>65/8</td>
-                <td>65/8</td>
-                <td>65/8</td>
-                <td>65/8</td>
-                <td>65/8</td>
-                <td>65/8</td>
-              </tr>
-            </tbody>
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>Parameters</td>
+                  <td>E 220 D</td>
+                  <td>E 290 TD</td>
+                  <td>E 300 D</td>
+                  <td>E 200 CDI</td>
+                  <td>E 220 CDI</td>
+                  <td>E 270 CDI</td>
+                  <td>E 320 CDI</td>
+                </tr>
+              </thead>
+              <tbody class="body">
+                <tr>
+                  <td>
+                    <p>Lubrication </p>
+                    <p>system of a car, L</p>
+                  </td>
+                  <td>6.5</td>
+                  <td>7.0</td>
+                  <td>n/d</td>
+                  <td>6.0</td>
+                  <td>6.5</td>
+                  <td>7.0</td>
+                  <td>7.5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Cooling</p>
+                    <p>system, L</p>
+                  </td>
+                  <td>9.0</td>
+                  <td>9.5</td>
+                  <td>n/d</td>
+                  <td>1.0</td>
+                  <td>9.0</td>
+                  <td>10.6</td>
+                  <td>11.2</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Fuel tank/fuel</p>
+                    <p>reserve, L</p>
+                  </td>
+                  <td>65/8</td>
+                  <td>65/8</td>
+                  <td>65/8</td>
+                  <td>65/8</td>
+                  <td>65/8</td>
+                  <td>65/8</td>
+                  <td>65/8</td>
+                </tr>
+              </tbody>
 
-          </table>
-        </div>
+            </table>
+          </div>
           <form class="rangeTable" id="button-scroll">
             <input class="scrollTable-range" id="scrollTable-range" type="range" />
           </form><br />
@@ -306,13 +299,13 @@
     </section>
 
     <!-- display-5 -->
-    <section class="display-5">
+    <section class="display-5" id="Works">
       <div class="title">
         <h2>More</h2>
         <h2>of our work</h2>
       </div>
 
-      <!--   <div class="range-scroll"> </div> -->
+
       <div class="bems-scroller scroll-panel">
         <ul class="scroll-content" id="scrolling-container">
           <li><img src="image/display-5/pic-1.png" />
@@ -340,28 +333,25 @@
         </ul>
       </div>
 
-      <form class="rangeSlider" id="btn-scroll">
+      <form class="rangeSlider">
         <input class="scroll-range" id="scroll-range" type="range" />
       </form><br />
 
     </section>
 
-
-
-
     <!-- display-6 contacts-->
-     <section class="display-6">
-      <!----> <div id="map">
-      </div> 
+    <section class="display-6">
+      <div id="map">
+      </div>
       <div class="overlay-gradient">
         <div class="contacts">
           <h2 class="contacts__title">Contacts</h2>
 
           <h4 class="contacts__subTitle">Adress</h4>
           <div class="contacts__descriptionBlock">
-           <p> 123557 Moscow,</p>
-           <p> Presnensky district, Bolshaya</p>
-             <p> Gruzinskaya str., 17 st1</p>
+            <p> 123557 Moscow,</p>
+            <p> Presnensky district, Bolshaya</p>
+            <p> Gruzinskaya str., 17 st1</p>
           </div>
           <h4 class="contacts__subTitle">Telephone</h4>
           <div class="contacts__descriptionBlock">
@@ -372,18 +362,75 @@
           <div class="contacts__descriptionBlock">
             info_stance@gmail.com
           </div>
-
         </div>
-
       </div>
+    </section>
 
+    <section class="display-7" id="btn-scroll">
+      <div class="footer" id="Contacts">
+        <div class="privacy">
+          <p>© © STANCE, 2009 - 2020</p>
+          <p>All rights reserved</p>
+          <p>Privacy policy</p>
+        </div>
+        <div class="contacts">
+          <div class="footer__menu">
+            <div class="footer__title">Menu</div>
+            <div class="footer__content">
+              <div class="col_1">
+                <ul>
+                  <li>
+                    <a class="scroll" data-section="home-scroll">Home</a>
+                  </li>
+                  <li><a href="/">About</a></li>
+                  <li><a href="/">Works</a></li>
+                </ul>
+              </div>
+              <div class="col_2">
+                <ul>
+                  <li><a href="/">Join</a></li>
+                  <li><a href="/">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    </section> 
+          <div class="footer__soc-net">
+            <div class="footer__title">Social network</div>
+            <div class="footer__content">
+              <div class="col_1">
+                <ul>
+                  <li><a href="/">Facebook</a></li>
+                  <li><a href="/">Instagram</a></li>
+                  <li><a href="/">YouTube</a></li>
+                </ul>
+              </div>
+              <div class="col_2">
+                <ul>
+                  <li><a href="/">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__logo">
+            <div class="logo">
+              <img src="image/display-7/AW21.png" alt="logo">
+            </div>
+            <div class="logo-content">
+              <p>Website</p>
+              <p>by AlbaWeb</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwuUGbd3mtZwpmkjOmwKz-nG821WH4wCU&libraries=&map_ids=9d78071374ceb090&callback=initMap"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 
 </html>

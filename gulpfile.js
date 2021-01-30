@@ -28,7 +28,7 @@ gulp.task("css_build", function (done) {
     .pipe(sass())
     .pipe(prefixer(["last 15 versions"]))
     .pipe(gcmq())
-    //.pipe(cssmin())
+    .pipe(cssmin())
     .pipe(gulp.dest("build/css/"))
     .pipe(browserSync.stream());
   done();
@@ -37,7 +37,6 @@ gulp.task("css_build", function (done) {
 gulp.task("js_build", function (done) {
   return gulp
     .src([
-       "node_modules/simplebar/dist/simplebar.min.js",
        "node_modules/scroll-to-element/build/scrollToElement.js",
        "src/assets/js/main.js",
     ])

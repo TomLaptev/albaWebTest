@@ -11,23 +11,21 @@ $custom: 320/100; //Custom, IPhone Retina */
 @media screen and (max-width: 1800px) {
   h2 {
     font-size: 60px;
-   line-height: 1.15;
+    line-height: 1.15;
     font-weight: normal;
     color: #000;
   }
- 
+
   .display-2 {
     .col-4 {
       padding-right: 20px;
     }
   }
- 
-  
 }
 @media screen and (max-width: 1600px) {
   html,
   body {
-    font-size: 14px;    
+    font-size: 14px;
   }
   .text_page {
     max-width: 1600px;
@@ -35,12 +33,12 @@ $custom: 320/100; //Custom, IPhone Retina */
       font-size: 72px;
     }
     h2 {
-      font-size: 54px;     
-    }    
-    
+      font-size: 54px;
+    }
+
     h3 {
       font-size: 24px;
-    } 
+    }
   }
   .display-1 {
     margin-bottom: 170px;
@@ -61,7 +59,7 @@ $custom: 320/100; //Custom, IPhone Retina */
   //==========end header======1600
 
   .title {
-    margin-bottom: 40px;   
+    margin-bottom: 40px;
   }
   .descrription {
     p {
@@ -127,20 +125,21 @@ $custom: 320/100; //Custom, IPhone Retina */
     top: 645px;
     right: 210px;
   }
-  //======= display-5  ===========1600
-  .display-5 {
-    margin-bottom: 150px;
-  }
-}
-/* User Screen */
-@media screen and (max-width: 1450px) {
+
   .display-4 {
     .table {
-      min-width: 1450px;
+      min-width: 1600px;
+    }
+    #scroll-content {
+      margin-bottom: 3rem;
     }
     input[type="range"] {
       display: inherit;
     }
+  }
+  //======= display-5  ===========1600
+  .display-5 {
+    margin-bottom: 150px;
   }
 }
 
@@ -156,12 +155,12 @@ $custom: 320/100; //Custom, IPhone Retina */
       font-size: 52px;
     }
     h2 {
-      font-size: 42px;     
-    }    
-    
+      font-size: 42px;
+    }
+
     h3 {
       font-size: 22px;
-    } 
+    }
   }
   .display-1 {
     margin-bottom: 120px;
@@ -203,6 +202,10 @@ $custom: 320/100; //Custom, IPhone Retina */
     top: 510px;
     right: 165px;
   }
+  .lang-dropDown {
+    width: 45px;
+    line-height: 1.5;
+  }
   //======display-2==========1280
 
   .display-2 {
@@ -234,7 +237,7 @@ $custom: 320/100; //Custom, IPhone Retina */
           width: 90%;
           padding-top: 60px;
           margin-right: 3.5%;
-         
+
           .content {
             font: 1rem Inter-Regular;
             line-height: 1.5;
@@ -276,13 +279,29 @@ $custom: 320/100; //Custom, IPhone Retina */
     }
   }
 
-    //======= display-5  ===========1280
-    .display-5 {
-      margin-bottom: 120px;
+  //======= display-5  ===========1280
+  .display-5 {
+    margin-bottom: 120px;
+  }
+
+  //==============display-7========== 1280
+  .footer {
+    padding-top: 35px;
+    height: 160px;
+
+    &__menu {
+      margin-right: 50px;
     }
-  
-  //==============display-6========== 1280
-  
+    &__soc-net {
+      margin-right: 60px;
+      .col_1 {
+        margin-right: 40px;
+      }
+    }
+    &__logo {
+      margin-bottom: 37px;
+    }
+  }
 }
 @media screen and (max-width: 1200px) {
 }
@@ -301,12 +320,12 @@ $custom: 320/100; //Custom, IPhone Retina */
       font-size: 36px;
     }
     h2 {
-      font-size: 30px;     
-    }    
-    
+      font-size: 30px;
+    }
+
     h3 {
       font-size: 20px;
-    } 
+    }
   }
   .display-1 {
     height: 489px;
@@ -350,12 +369,13 @@ $custom: 320/100; //Custom, IPhone Retina */
       position: relative;
       font-size: 1.75rem;
       line-height: 1;
-      .drop-menu {
+      .drop-menu  {
+        
         left: inherit;
         right: -30px;
         li {
           padding-top: 0px;
-          a {
+          span {font-size: 1.125rem;
             &:hover {
               color: red;
             }
@@ -379,6 +399,10 @@ $custom: 320/100; //Custom, IPhone Retina */
   #scroll-down {
     top: 385px;
     right: 125px;
+  }
+  .lang-dropDown {
+    width: 45px;
+    line-height: 2;
   }
   //=======display-2============991
   .display-2 {
@@ -409,7 +433,7 @@ $custom: 320/100; //Custom, IPhone Retina */
   .display-3 {
     margin-bottom: 80px;
     .row {
-      margin-bottom: 80px;
+      margin-bottom: 40px;
       display: block;
       .photo {
         margin-bottom: 40px;
@@ -439,7 +463,8 @@ $custom: 320/100; //Custom, IPhone Retina */
             max-width: 50%;
             padding-top: 0;
             .heading {
-              font: 42px Prata-Regular;
+              font-family: Prata-Regular;
+              padding: 1em;
             }
             .content {
               font: 1rem Inter-Regular; /*  */
@@ -465,7 +490,6 @@ $custom: 320/100; //Custom, IPhone Retina */
     margin-bottom: 80px;
     .title {
       margin-bottom: 40px;
-      text-align: center;
       p {
         font-size: 42px;
       }
@@ -478,25 +502,20 @@ $custom: 320/100; //Custom, IPhone Retina */
   //==============display-5========== 991
   .display-5 {
     margin-bottom: 80px;
-    
-      
-      .descr-pic {
-        font-size: 18px ;
-      } 
-    
 
+    .descr-pic {
+      font-size: 18px;
+    }
 
     .title {
-      margin-bottom: 40px;
-      text-align: center;    
+      margin-bottom: 30px;
     }
     .bems-scroller {
       li {
         width: 260px;
         margin: 0.5rem;
       }
-    }    
-  
+    }
   }
   //==============display-6========== 991
   .display-6 {
@@ -506,8 +525,12 @@ $custom: 320/100; //Custom, IPhone Retina */
       }
     }
   }
+  //==============display-7========== 991
+  .footer {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
-
 /* Small Devices, Tablets */
 @media screen and (max-width: 767px) {
   .text_page {
@@ -516,12 +539,12 @@ $custom: 320/100; //Custom, IPhone Retina */
       font-size: 28px;
     }
     h2 {
-      font-size: 26px;     
-    }    
-    
+      font-size: 26px;
+    }
+
     h3 {
       font-size: 20px;
-    } 
+    }
   }
   .display-1 {
     height: 379px;
@@ -553,7 +576,7 @@ $custom: 320/100; //Custom, IPhone Retina */
     top: 290px;
     right: 95px;
   }
-  //=======display-2============
+  //=======display-2============767
   .display-2 {
     margin-bottom: 40px;
     .row {
@@ -571,7 +594,7 @@ $custom: 320/100; //Custom, IPhone Retina */
   //============display-3====
   .display-3 {
     .row {
-      margin-bottom: 60px;
+      margin-bottom: 30px;
       .photo {
         margin-bottom: 30px;
         img {
@@ -583,7 +606,7 @@ $custom: 320/100; //Custom, IPhone Retina */
           .description {
             max-width: 70%;
             .heading {
-              font: 40px Prata-Regular;
+              font-family: Prata-Regular;
             }
           }
         }
@@ -598,8 +621,34 @@ $custom: 320/100; //Custom, IPhone Retina */
       }
     }
   }
-}
 
+  .footer {
+    display: block;
+    padding-left: 12%;
+    padding-bottom: 30px;
+    height: inherit;
+
+    .contacts{
+      display: block;
+    }
+   &__logo{
+   justify-content: flex-start;
+   }
+
+   &__content{
+     display: block;
+   }
+   .privacy,
+   &__menu,
+   &__soc-net{
+     width: 100%;
+   margin-bottom: 20px;
+   //padding-bottom: 10px;
+  // border-bottom: 1px solid #fff;
+  // text-align: center;
+  }
+}
+}
 /* Super Small Devices, Tablets */
 @media screen and (max-width: 600px) {
 }
@@ -612,6 +661,17 @@ $custom: 320/100; //Custom, IPhone Retina */
   }
   .text_page {
     max-width: 480px;
+    max-width: 767px;
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
   }
   .display-1 {
     height: 237px;
@@ -645,7 +705,7 @@ $custom: 320/100; //Custom, IPhone Retina */
   .title {
     max-width: 95%;
     margin-bottom: 5px;
-    font: 16px Prata-Regular;
+    font-family: Prata-Regular;
   }
   .descrription {
     //border: solid 1px white;
@@ -700,7 +760,7 @@ $custom: 320/100; //Custom, IPhone Retina */
           .description {
             max-width: 80%;
             .heading {
-              font: 30px Prata-Regular;
+              font-family: Prata-Regular;
             }
           }
         }
@@ -732,7 +792,7 @@ $custom: 320/100; //Custom, IPhone Retina */
   }
   //==============display-5========== 480
   .display-5 {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
     .title {
       margin-bottom: 30px;
       text-align: center;
@@ -740,8 +800,11 @@ $custom: 320/100; //Custom, IPhone Retina */
         font-size: 32px;
       }
     }
+    input[type="range"] {
+      width: 97%;
+    }
   }
-  //==============display-5========== 480
+  //==============display-6========== 480
   .display-6 {
     .contacts {
       &__title {

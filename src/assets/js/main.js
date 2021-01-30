@@ -55,9 +55,9 @@ scrollTab.oninput = function () {
 	const total = panel.scrollWidth - panel.offsetWidth;
 	const percentage = total*(this.value/100);
 	
-	console.log(total);
+	
 	panel.scrollLeft = percentage;
-  //console.log(percentage);
+ 
   
 }
 
@@ -73,9 +73,9 @@ scroll.oninput = function () {
 	const total = panel.scrollWidth - panel.offsetWidth;
 	const percentage = total*(this.value/100);
 	
-	console.log(total);
+
 	panel.scrollLeft = percentage;
-	//console.log(percentage);
+	
 }
 
 

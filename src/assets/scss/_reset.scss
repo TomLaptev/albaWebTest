@@ -1,13 +1,17 @@
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 
 html, body {
     border: 0;
-    //line-height: 1.5;
     margin: 0;
     padding: 0;
     font-size: 16px;
+}
+a{
+  text-decoration: none;
+ cursor: pointer;
 }
 
 div, span, object, iframe, img, table, caption, thead, tbody,
@@ -53,6 +57,11 @@ h5 {
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video {
     display: block;
+}
+ul,
+ol,
+li{
+  list-style: none;
 }
 
 table {

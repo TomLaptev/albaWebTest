@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "gulp-rename": "^2.0.0",
-    "scroll-to-element": "^2.0.3",
-    "simplebar": "^5.3.0"
+    "scroll-to-element": "^2.0.3"
+   
   }
 }
