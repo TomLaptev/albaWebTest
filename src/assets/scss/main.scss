@@ -4,14 +4,21 @@
 @import "reset";
 @import "bootstrap-grid";
 
-
 html,
 body {
   font-size: 16px;
+  //background: #ddd;
+}
+.off{
+  display: none !important;
+}
+.mobile{
+  overflow-x: auto !important;
 }
 .text_page {
   margin: 0 auto;
   max-width: 1920px;
+  width: 100%;
 
   h2 {
     line-height: 1.15;
@@ -105,7 +112,7 @@ body {
     position: absolute;
     left: 0;
     top: 25px;
-     display: none;
+    display: none;
     &__isOpen {
       display: flex;
       font-size: inherit;
@@ -315,7 +322,6 @@ body {
   .descrPhoto_2 {
     .overlay {
       .description-2 {
-        //display: flex;
         width: 48%;
         padding-top: 7.5em;
         padding-right: 0;
@@ -336,6 +342,7 @@ body {
     }
   }
 }
+
 .display-4 {
   margin-bottom: 155px;
   padding-left: 12%;
@@ -355,27 +362,17 @@ body {
   .bems-scroll {
     padding: 0 0.5rem 0 0;
     width: 100%;
-    overflow: hidden;
   }
+
   #scroll-content {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 1rem 0;
     overflow-x: hidden;
-    overflow-x: -moz-scrollbars-none;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-
-    #scroll-content::-webkit-scrollbar {
-      display: none;
-    }
   }
-
   .table {
     max-width: 1458px;
     width: 100%;
-    margin: 0; //auto;
+    margin: 0; 
     font: 1.125rem Inter-Regular;
     td {
       /* border-left: 1px solid #d6d7d9; */
@@ -422,10 +419,8 @@ body {
   }
   input[type="range"] {
     border-top: 1px solid rgba(168, 168, 168, 0.2);
-
     height: 1px;
     width: 99%;
-    -moz-appearance: none;
     -webkit-appearance: none;
     border-radius: 3px;
     display: none;
@@ -434,16 +429,26 @@ body {
     outline: none;
   }
   .rangeslider,
-  input::-webkit-slider-thumb {
+  ::-webkit-slider-thumb {
     background: rgba(232, 35, 46, 1);
     cursor: pointer;
     height: 0.7rem;
     text-indent: -9999px;
     width: 3rem;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    border: none;
+   -webkit-appearance: none;
     border-radius: 5.5px;
   }
+
+  ::-moz-range-thumb {
+    background: rgba(232, 35, 46, 1);
+    cursor: pointer;
+    height: 0.7rem;
+    text-indent: -9999px;
+    width: 3rem;
+    border: none;
+    border-radius: 5.5px;
+  } 
 }
 //======= display-5  ===========
 .display-5 {
@@ -456,20 +461,15 @@ body {
     margin-left: 0;
   }
   .bems-scroller {
-    //display: flex;
-    //height: 200px;
     width: 100%;
-    overflow: hidden;
 
     #scrolling-container {
       display: flex;
       flex-wrap: nowrap;
       padding: 1em 0;
       overflow-x: hidden;
-      overflow-x: -moz-scrollbars-none;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
-      -ms-overflow-style: -ms-autohiding-scrollbar;
     }
     #scrolling-container::-webkit-scrollbar {
       display: none;
@@ -503,22 +503,29 @@ body {
 
     height: 1px;
     width: 99%;
-    -moz-appearance: none;
     -webkit-appearance: none;
     border-radius: 3px;
   }
   input[type="range"]:focus {
     outline: none;
   }
-  .rangeslider,
-  input::-webkit-slider-thumb {
+
+  ::-webkit-slider-thumb {
     background: rgba(232, 35, 46, 1);
     cursor: pointer;
     height: 0.75rem;
     text-indent: -9999px;
     width: 3rem;
-    -moz-appearance: none;
     -webkit-appearance: none;
+    border-radius: 5.5px;
+  }
+  ::-moz-range-thumb {
+    background: rgba(232, 35, 46, 1);
+    cursor: pointer;
+    height: 0.7rem;
+    text-indent: -9999px;
+    width: 3rem;
+    border: none;
     border-radius: 5.5px;
   }
 }

@@ -48,15 +48,14 @@ window.onload = function () {
 };
 /* =============================================== */ 
 const scrollTab = document.getElementById("scrollTable-range");
-
+const panel1 = document.getElementById("scroll-content");
 scrollTab.oninput = function () {
-	const panel = document.getElementById("scroll-content");
-	
-	const total = panel.scrollWidth - panel.offsetWidth;
-	const percentage = total*(this.value/100);
 	
 	
-	panel.scrollLeft = percentage;
+	const total1 = panel1.scrollWidth - panel1.offsetWidth;
+	const percentage1 = total1*(this.value/100);
+	
+	panel1.scrollLeft = percentage1;
  
   
 }
@@ -65,20 +64,25 @@ scrollTab.oninput = function () {
 
 /* ================================================== */
 
-const scroll = document.getElementById("scroll-range");
-
+ const scroll = document.getElementById("scroll-range");
+	const panel2 = document.getElementById("scrolling-container");
 scroll.oninput = function () {
-	const panel = document.getElementById("scrolling-container");
+
 	
-	const total = panel.scrollWidth - panel.offsetWidth;
-	const percentage = total*(this.value/100);
+	const total2 = panel2.scrollWidth - panel2.offsetWidth;
+	const percentage2 = total2*(this.value/100);
 	
 
-	panel.scrollLeft = percentage;
+	panel2.scrollLeft = percentage2;
 	
+} 
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  panel1.classList.add('mobile');
+  scrollTab.classList.add('off');
+  panel2.classList.add('mobile');
+  scroll.classList.add('off');
 }
-
-
   /*----------------Map---------------------*/
   function initMap() {
     const point = { lat: 55.75891952693745, lng: 37.59045935989981 };

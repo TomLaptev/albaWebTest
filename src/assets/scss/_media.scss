@@ -91,7 +91,6 @@ $custom: 320/100; //Custom, IPhone Retina */
         .description-2 {
           padding-top: 7.5em;
           width: 60%;
-          // margin: 0;
         }
       }
     }
@@ -101,6 +100,8 @@ $custom: 320/100; //Custom, IPhone Retina */
   .display-4 {
     margin-bottom: 120px;
     .table {
+      min-width: 1600px;
+
       thead {
         tr {
           td:first-child {
@@ -119,24 +120,14 @@ $custom: 320/100; //Custom, IPhone Retina */
         }
       }
     }
-  }
-
-  #scroll-down {
-    top: 645px;
-    right: 210px;
-  }
-
-  .display-4 {
-    .table {
-      min-width: 1600px;
-    }
     #scroll-content {
       margin-bottom: 3rem;
     }
     input[type="range"] {
-      display: inherit;
+      display: block;
     }
   }
+  
   //======= display-5  ===========1600
   .display-5 {
     margin-bottom: 150px;
@@ -369,13 +360,13 @@ $custom: 320/100; //Custom, IPhone Retina */
       position: relative;
       font-size: 1.75rem;
       line-height: 1;
-      .drop-menu  {
-        
+      .drop-menu {
         left: inherit;
         right: -30px;
         li {
           padding-top: 0px;
-          span {font-size: 1.125rem;
+          span {
+            font-size: 1.125rem;
             &:hover {
               color: red;
             }
@@ -498,6 +489,8 @@ $custom: 320/100; //Custom, IPhone Retina */
       min-width: 1000px;
       max-width: 1200px;
     }
+
+ 
   }
   //==============display-5========== 991
   .display-5 {
@@ -591,7 +584,7 @@ $custom: 320/100; //Custom, IPhone Retina */
     }
   }
 
-  //============display-3====
+  //============display-3==== 767
   .display-3 {
     .row {
       margin-bottom: 30px;
@@ -622,32 +615,53 @@ $custom: 320/100; //Custom, IPhone Retina */
     }
   }
 
+  //============display-4==== 767
+
+  /* .display-4 {
+
+    #scroll-content {
+     overflow-x: auto;
+    }
+    #button-scroll {
+     display: none;
+    }
+    ::-webkit-scrollbar {
+      overflow-x: auto;
+    } 
+    
+    
+  } */
+
+ /*  .display-5 {
+  
+    
+   .rangeSlider {
+      display: none;
+    }
+}  */
   .footer {
     display: block;
     padding-left: 12%;
     padding-bottom: 30px;
     height: inherit;
 
-    .contacts{
+    .contacts {
       display: block;
     }
-   &__logo{
-   justify-content: flex-start;
-   }
+    &__logo {
+      justify-content: flex-start;
+    }
 
-   &__content{
-     display: block;
-   }
-   .privacy,
-   &__menu,
-   &__soc-net{
-     width: 100%;
-   margin-bottom: 20px;
-   //padding-bottom: 10px;
-  // border-bottom: 1px solid #fff;
-  // text-align: center;
+    &__content {
+      display: block;
+    }
+    .privacy,
+    &__menu,
+    &__soc-net {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
-}
 }
 /* Super Small Devices, Tablets */
 @media screen and (max-width: 600px) {
